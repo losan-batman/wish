@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+    
+} 
+
+
+
+
+
+/*************TAG SELECTORS*********************/
+
+h1{
+  position: relative;
+  text-align: center;
+  top: 400px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+}
+
+
+body{
+  background-color: #2A3335;
+}
+
+h2{
+  position: relative;
+  text-align: center;
+  bottom: 100px;
+  
+ 
+}
+
+
+
+
+/*************CLASS SELECTORS*********************/
+
+
+.top{
+    background-color: #4DA1A9;
+    position: relative;
+    height: 500px;
+    bottom: 60px;
+ 
+}
+
+.bottom{
+  text-align: center;
+}
+
+
+.trees{
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 1500px;
+    height: 300px;
+    top: 80px;
+    
+  }
+
+  
+.shining{
+  position: relative;
+  bottom: 250px;
+  left: 10px;
+
+}
+
+.shining-2{
+  position: relative;
+  left: 500px;
+  bottom  : 300px;
+
+}
+
+
+.balls{
+  position: relative;
+  bottom: 200px;
+  left: 1300px;
+}
+
+.balls-2{
+  position: relative;
+  bottom: 500px;
+  left: 400px;
+}
+
+.santa{
+  mix-blend-mode: multiply;
+  position: relative;
+  top: 200px;
+  left: 700px;
+}
+
+
+
+
+
+
+  
+.btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: black;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+
+.container{ 
+  float: left;
+  
+}
+
+/* MERRY-CHRISTMASS SELECTORS */
+
+
+/*******************CLASS SELECTORS *******************/
+.mery{
+  background-color: wheat;
+}
+
+
+.right{
+  background-color: #6c7d8d;
+  position: absolute;
+  height: 1000px;
+  width: 500px;
+ 
+}
+
+.left{
+  position: absolute;
+  left: 500px;
+  height: 1000px;
+  width: 1400px;
+}
+
+.coolr{
+  mix-blend-mode: multiply;
+  position: relative;
+  top: 200px;
+  right: 100px;
+}
+
+.pop{
+  mix-blend-mode: multiply;
+  position: relative;
+  right: 550px;
+  bottom: 200px;
+  
+}
+
+.rtr-1{
+  position: relative;
+height: 200px;
+
+}
+
+.rtr-2{
+  position: relative;
+  bottom: 210px;
+  left: 1230px;
+}
+
+
+
+
+/* From Uiverse.io by vamsidevendrakumar */ 
+.card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  position: absolute;
+  left: 200px;
+  top: 300px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #6A2C70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #6A2C70;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+ opacity: 0.5;
+}
+
+.card-back {
+  background-color: #F08A5D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #F08A5D;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
